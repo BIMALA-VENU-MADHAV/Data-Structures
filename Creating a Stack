@@ -9,14 +9,14 @@ def push():
         print(stack)
 def pop():
     global stack
-    if stack!=0:
+    if stack==[]:
+         print("\t-----Stack is empty-----")
+    else:
         print("The popped element is:",stack.pop())
         print(stack)
-    else:
-        print("Stack is empty")
 while True:
     print("------STACK OPERATION-------")
-    print("1.Push\t2.Pop\t3.Exit")
+    print("1.Push\n2.Pop\n3.Exit")
     a=int(input("Enter the your choice:"))
     if a==1:
         push()
